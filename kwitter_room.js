@@ -2,6 +2,7 @@
 var firebaseConfig = {
     apiKey: "AIzaSyB1bCv5P1uVW5wum5ct_yJ8tDCZpkcCsQ4",
     authDomain: "pallav-project-93-94-95-96-97.firebaseapp.com",
+    databaseURL: "https://pallav-project-93-94-95-96-97-default-rtdb.firebaseio.com",
     projectId: "pallav-project-93-94-95-96-97",
     storageBucket: "pallav-project-93-94-95-96-97.appspot.com",
     messagingSenderId: "615635768463",
@@ -38,3 +39,8 @@ function redirectToRoomName(name){
   window.location="kwitter_page.html";
 }
 
+function logout(){
+  localStorage.removeItem("user_name");
+  localStorage.removeItem("room_name");
+  window.location="index.html";
+}
